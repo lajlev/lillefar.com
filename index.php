@@ -1,1 +1,1 @@
-< ?php header("Location: http://www.lillefar.dk/"); ?>
+<?php header("Location: http://www.lillefar.dk/"); ?>
