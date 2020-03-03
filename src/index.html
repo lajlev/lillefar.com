@@ -1,0 +1,23 @@
+---
+layout: layouts/base.html
+---
+
+<h1>Games</h1>
+
+<h2>Own</h2>
+
+{% for game in gamesOwn limit:2 %}
+  
+{{ game.name.title }}
+{% endfor %}
+
+<h2>For trade</h2>
+{% for game in gamesForTrade limit:2 %}
+  {{ game.name.title }}
+{% endfor %}
+
+<h2>Pre-ordered</h2>
+{% for game in gamesPreordered limit:2 %}
+  {{ game.name.title }}
+{% endfor %}
+
