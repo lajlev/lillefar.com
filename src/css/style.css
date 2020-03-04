@@ -1,0 +1,57 @@
+body {
+  font-family: 'Caladea', serif;
+  background: #efefef;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+a,
+a:visited {
+  color: #000;
+}
+
+.card {
+  text-align: left;
+}
+
+.card .image-link {
+  display: inline-block;
+  vertical-align: middle;
+  height: 150px;
+}
+
+.card .image-link img {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card .info {
+  padding: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 250px;
+  word-break: break-all;
+  height: 150px;
+}
+
+.game {
+  display: inline-block;
+  margin: 7px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
+  border-radius: 8px;
+  height: 150px;
+}
+
+.game img {
+  border-radius: 8px;
+  width: auto;
+  height: 150px;
+}
+
+#prevowned .game img {
+  filter: grayscale(50%);
+}

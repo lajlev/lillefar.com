@@ -1,0 +1,55 @@
+---
+layout: layouts/base.html
+---
+
+<h1>Games</h1>
+
+<h2>My Game library</h2>
+<div class="games" id="library">
+  {% for game in gamesOwn %}
+    <a class="game" title="{{ game.name.title }}" href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">  
+      <img src="{{ game.thumbnail }}" alt="{{ game.name.title }}">
+    </a>
+  {% endfor %}
+</div>
+
+
+<h2>For trade</h2>
+<div class="games" id="trade">
+{% for game in gamesForTrade %}
+  <div class="game card">
+    <a class="image-link" title="{{ game.name.title }}" href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">  
+      <img src="{{ game.thumbnail }}" alt="{{ game.name.title }}">
+    </a>
+    <div class="info">
+      <h4><a href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">{{ game.name.title }}</a></h4>
+      <p>{{ game.comment }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<h2>Pre-ordered</h2>
+<div class="games" id="trade">
+{% for game in gamesPreordered %}
+  <div class="game card">
+    <a class="image-link" title="{{ game.name.title }}" href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">  
+      <img src="{{ game.thumbnail }}" alt="{{ game.name.title }}">
+    </a>
+    <div class="info">
+      <h4><a href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">{{ game.name.title }}</a></h4>
+      <p>{{ game.comment }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<h2>Games previous Owned</h2>
+<div class="games" id="prevowned">
+{% for game in gamesPrevOwn %}
+  <a class="game" title="{{ game.name.title }}" href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">  
+    <img src="{{ game.thumbnail }}" alt="{{ game.name.title }}">
+  </a>
+{% endfor %}
+</div>
+

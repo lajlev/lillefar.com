@@ -1,6 +1,7 @@
 module.exports = config => {
 
   config.setDataDeepMerge(true);
+  config.setUseGitIgnore(false);
   
   return {
     dir: {
@@ -9,8 +10,8 @@ module.exports = config => {
       includes: "_views",
       data: "_data"
     },
-    templateFormats: ["html", "md"],
+    templateFormats: ["html", "md", "css"],
     htmlTemplateEngine: "liquid",
-    markdownTemplateEngine: "liquid"
+    markdownTemplateEngine: "liquid",
   }
 }
