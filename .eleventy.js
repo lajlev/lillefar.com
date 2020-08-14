@@ -3,8 +3,8 @@ module.exports = config => {
   config.setDataDeepMerge(true);
   config.setUseGitIgnore(false);
   
-  config.addPassthroughCopy("*.js");
-  config.addPassthroughCopy("*.css");
+  config.addPassthroughCopy("**/*.js");
+  config.addPassthroughCopy("**/*.css");
   
   return {
     dir: {
