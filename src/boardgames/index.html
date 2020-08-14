@@ -21,21 +21,6 @@ stylesheet: style.css
   {% endfor %}
 </div>
 
-<div class="games" id="trade">
-  <h2>For trade</h2>
-{% for game in gamesForTrade %}
-  <div class="game card">
-    <a class="image-link" title="{{ game.name.title }}" href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">  
-      <img src="{{ game.thumbnail }}" alt="{{ game.name.title }}">
-    </a>
-    <div class="info">
-      <h4><a href="https://boardgamegeek.com/boardgame/{{ game.objectid }}">{{ game.name.title }}</a></h4>
-      <p>{{ game.comment }}</p>
-    </div>
-  </div>
-{% endfor %}
-</div>
-
 
 <div class="games" id="preordered">
   <h2>Pre-ordered</h2>
