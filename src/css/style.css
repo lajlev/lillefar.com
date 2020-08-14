@@ -1,7 +1,6 @@
 body {
   font-family: 'Caladea', serif;
   background: #efefef;
-  text-align: center;
 }
 
 h2 {
@@ -12,62 +11,4 @@ h2 {
 a,
 a:visited {
   color: #000;
-}
-
-.card {
-  text-align: left;
-}
-
-.card .image-link {
-  display: inline-block;
-  vertical-align: middle;
-  height: 150px;
-}
-
-.card .image-link img {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.card .info {
-  padding: 0 5px;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 250px;
-  word-break: break-all;
-  height: 150px;
-}
-
-.game {
-  display: inline-block;
-  margin: 7px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
-  border-radius: 8px;
-  height: 150px;
-}
-
-.game img {
-  border-radius: 8px;
-  width: auto;
-  height: 150px;
-}
-@media only screen and (max-width: 400px) {
-  .game {
-    margin: 10px 0;
-    display: inline-block;
-    height: auto;
-    width: 100%;
-    box-shadow: none;
-  }
-  .game img {
-    border-radius: 8px;
-    width: 60%;
-    height: auto;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
-  }
-}
-
-
-#prevowned .game img {
-  filter: grayscale(50%);
 }

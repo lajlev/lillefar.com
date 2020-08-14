@@ -1,0 +1,37 @@
+---
+layout: layouts/base.html
+title: Michaels boardgames
+stylesheet: styles.css
+---
+
+
+<h1>Here comes Rajas</h1>
+<div id="app">
+  {% raw %}
+  <div v-if="deckShuffled"></div>
+    <!-- <img v-bind:src="'images/card-back-' + this.deckRandom[this.deckCounter] + '.jpg'">
+    <img v-bind:src="'images/card-front-' + this.deckRandom[this.deckCounter] + '.jpg'">
+    <button id="btn-draw" v-on:click="drawCard">Draw card</button> -->
+  </div>
+  <div v-else>
+    <button id="btn-shuffle" v-on:click="shuffleCards">Shuffle deck</button>
+  </div>
+  
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      deckShuffled: false
+    },
+    methods: {
+      shuffleCards: function () {
+        alert('works')
+      }
+    }
+    
+  })
+</script>
+
+{% endraw %}

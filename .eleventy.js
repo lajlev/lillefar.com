@@ -3,6 +3,9 @@ module.exports = config => {
   config.setDataDeepMerge(true);
   config.setUseGitIgnore(false);
   
+  config.addPassthroughCopy("*.js");
+  config.addPassthroughCopy("*.css");
+  
   return {
     dir: {
       input: "src",
@@ -10,8 +13,8 @@ module.exports = config => {
       includes: "_views",
       data: "_data"
     },
-    templateFormats: ["html", "md", "css"],
+    templateFormats: ["html", "md"],
     htmlTemplateEngine: "liquid",
-    markdownTemplateEngine: "liquid",
+    markdownTemplateEngine: "liquid"
   }
 }
