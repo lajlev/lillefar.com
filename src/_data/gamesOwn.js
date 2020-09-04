@@ -1,7 +1,7 @@
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 
-module.exports = async function() {
-	let resp = await fetch('https://bggapi.glitch.me/collection?username=lajlev');
-	let games = await resp.json();
-	return games.item;
-};
+// module.exports = async function() {
+// 	let resp = await fetch('https://bggapi.glitch.me/collection?username=lajlev');
+// 	let games = await resp.json();
+// 	return games.item;
+// };
