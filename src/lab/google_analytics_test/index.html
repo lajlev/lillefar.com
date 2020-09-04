@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitelabel app NAF</title>
+  <style>
+    html {
+      text-align: center;
+    }
+    .btn {
+      background: deeppink;
+      padding: .5em;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-UA-112012820-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012820-5', {
+      'send_page_view': false,
+      'campaign': {
+        'medium': 'app',
+        'source': 'naf',
+        'name': 'dah-app'
+      }
+    });
+    
+    gtag('event', 'page_view', {
+      page_location: '/intro',
+      page_path: '/intro',
+      page_title: 'Intro'
+    });
+  </script>
+
+
+
+</head>
+<body>
+  <h1>Whitelabel NAF app</h1>
+  <a class="btn" href="#" onclick="gtag('event', 'click', {'event_category' : 'links','event_label' : 'random button'});">Random button</a>
+  <a href="page2.html">go to page 2</a>
+</body>
+</html>
